@@ -14,8 +14,12 @@ def filter_by_state(list_dict: list[dict[str, Any]], state: str = "EXECUTED") ->
     return [d for d in list_dict if d.get("state") == state]
 
 
-def sort_by_date(list_of_dict: list[dict[str, Any]], reverse: bool = True) -> list[dict[str, Any]]:
+def sort_by_date(list_dict: list[dict[str, Any]], reverse: bool = True) -> list[dict[str, Any]]:
     """Функция приёма списка словарей и возврата нового списка с
     отсортироваными по убыванию датами."""
-    sorted_state = sorted(list_of_dict, key=lambda new_list_of_dict: new_list_of_dict["date"], reverse=reverse)
-    return sorted_state
+    sorted_list = sorted(
+        list_dict,
+        key=lambda new_list_of_dict: new_list_of_dict["date"],
+        reverse=reverse,
+    )
+    return sorted_list
