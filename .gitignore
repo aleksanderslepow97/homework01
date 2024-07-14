@@ -2,4 +2,4 @@ venv/
 .idea/
 __pycache__/
 *.pyc
-.venv/
+.venv/Lib/site-packages
