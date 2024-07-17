@@ -1,18 +1,28 @@
-from masks import get_mask_card_number
+from src.masks import masked_account_num, masked_card_num
 
 
-def mask_account_card(string_number: str) -> str:
-    """функция обработки информации о картах и счетах"""
-    if len(string_number.split()[-1]) == 16:
-        new_numb = get_mask_card_number(string_number.split()[-1])
-        result = f"{string_number[:-16]}{new_numb}"
-    elif len(string_number.split()[-1]) == 20:
-        new_numb = get_mask_card_number(string_number.split()[-1])
-        result = f"{string_number[:-20]}{new_numb}"
-    return result
+def mask_elements(element: str) -> str | None:
+    """Функция, маскирующая любой элемент,
+    как номер карты, так и номер счёта"""
+    if element[0] == "С":
+        for i in range(len(element)):
+            if element[i].isalpha():
+                continue
+            elif element[i].isdigit():
+                mask = masked_account_num(element[i:])
+                return f"Счет {mask}"
+
+    else:
+        for i in range(len(element)):
+            if element[i].isalpha():
+                continue
+            elif element[i].isdigit():
+                mask = masked_card_num(element[i:])
+                return f"{element[:-16]}{mask}"
+    return None
 
 
-def get_date(one_data: str) -> str:
-    """функция приема и возврата строки с датой"""
-    two_data = one_data[0:10].split("-")
-    return "-".join(two_data[::-1])
+def get_date(date: str) -> str:
+    """функция получает дату из полученных данных, и выводит её"""
+    day, month, year = date[8:10], date[5:7], date[:4]
+    return f"{day}.{month}.{year}"
