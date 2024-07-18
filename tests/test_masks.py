@@ -14,9 +14,9 @@ def coll() -> list:  # имя фикстуры любое
     ]
 
 
-def test_masked_card_num() -> None:
+def test_masked_card_num(coll) -> None:
     assert masked_card_num("7000799978996361") == "7000 79** **** 6361"
 
 
-def test_masked_account_num() -> None:
+def test_masked_account_num(coll) -> None:
     assert masked_account_num("98766667774305") == "**4305"
