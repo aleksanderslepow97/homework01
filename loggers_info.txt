@@ -54,3 +54,27 @@
 2024-07-17 13:47:21,488 masks.py INFO: mask 7000 79** **** 6361
 2024-07-17 13:47:21,491 masks.py INFO: start masked_account_num 73654108430135874305
 2024-07-17 13:47:21,491 masks.py INFO: mask **4305
+2024-07-19 11:07:21,954 masks.py INFO: start masked_card_num Visa Platinum 7000 7922 8960 6361
+2024-07-19 11:07:21,956 masks.py INFO: mask Visa  P** **** m 7000 7922 8960 6361
+2024-07-19 11:07:21,988 masks.py INFO: start masked_card_num Maestro 7000 7922 8960 6361
+2024-07-19 11:07:21,988 masks.py INFO: mask Maes tr** ****  7922 8960 6361
+2024-07-19 11:07:21,999 masks.py INFO: start masked_card_num —чет 73654108430135874305
+2024-07-19 11:07:21,999 masks.py INFO: mask —чет  7** **** 8430135874305
+2024-07-19 11:07:22,011 masks.py INFO: start masked_account_num 2018-07-11T02:26:18.671407
+2024-07-19 11:07:22,011 masks.py INFO: mask **1407
+2024-07-19 11:07:22,032 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-19 11:07:22,034 masks.py INFO: mask 7000 79** **** 6361
+2024-07-19 11:07:22,038 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-19 11:07:22,039 masks.py INFO: mask **4305
+2024-07-19 11:07:35,893 masks.py INFO: start masked_card_num Visa Platinum 7000 7922 8960 6361
+2024-07-19 11:07:35,893 masks.py INFO: mask Visa  P** **** m 7000 7922 8960 6361
+2024-07-19 11:07:35,996 masks.py INFO: start masked_card_num Maestro 7000 7922 8960 6361
+2024-07-19 11:07:35,996 masks.py INFO: mask Maes tr** ****  7922 8960 6361
+2024-07-19 11:07:36,002 masks.py INFO: start masked_card_num —чет 73654108430135874305
+2024-07-19 11:07:36,002 masks.py INFO: mask —чет  7** **** 8430135874305
+2024-07-19 11:07:36,008 masks.py INFO: start masked_account_num 2018-07-11T02:26:18.671407
+2024-07-19 11:07:36,008 masks.py INFO: mask **1407
+2024-07-19 11:07:36,023 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-19 11:07:36,023 masks.py INFO: mask 7000 79** **** 6361
+2024-07-19 11:07:36,026 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-19 11:07:36,026 masks.py INFO: mask **4305
