@@ -1,5 +1,6 @@
 import pytest
 
+from src.widget import mask_elements, get_date
 from src.masks import masked_card_num, masked_account_num
 
 
@@ -7,13 +8,17 @@ from src.masks import masked_card_num, masked_account_num
     ("MasterCard 7158300734726758", "MasterCard 7158 30** **** 6758"),
     ("Счет 12345678901234567890", "Счет **7890"),
 ])
-def test_masked_card_num(string, expected_result):
-    assert masked_card_num(string) == expected_result
+def test_mask_elements(string, expected_result):
+    assert mask_elements(string) == expected_result
 
 
 @pytest.fixture
 def date():
     return "2018-07-11T02:26:18.671407"
+
+
+def test_get_date(date):
+    assert get_date(date) == "11.07.2018"
 
 
 @pytest.mark.parametrize("string, expected_result", [
