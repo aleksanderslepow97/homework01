@@ -1,28 +1,20 @@
-from src.masks import masked_account_num, masked_card_num
+from typing import Union
+
+from src import masks
 
 
-def mask_elements(element: str) -> str | None:
-    """Функция, маскирующая любой элемент,
-    как номер карты, так и номер счёта"""
-    if element[0] == "С":
-        for i in range(len(element)):
-            if element[i].isalpha():
-                continue
-            elif element[i].isdigit():
-                mask = masked_account_num(element[i:])
-                return f"Счет {mask}"
-
+def mask_account_card(account_card: str) -> Union[str, None]:
+    """Функция маскировки номера карты или номера счета"""
+    numeral = account_card[-20:]
+    if numeral.isdigit():
+        account = str(numeral)
+        return f"{account_card[0:-20]} {masks.get_mask_account(account)}"
     else:
-        for i in range(len(element)):
-            if element[i].isalpha():
-                continue
-            elif element[i].isdigit():
-                mask = masked_card_num(element[i:])
-                return f"{element[:-16]}{mask}"
-    return None
+        card_number = str(account_card[-16:])
+        return f"{account_card[0:-16]} {masks.get_mask_card_number(card_number)}"
 
 
-def get_date(date: str) -> str:
-    """функция получает дату из полученных данных, и выводит её"""
-    day, month, year = date[8:10], date[5:7], date[:4]
-    return f"{day}.{month}.{year}"
+def get_date(date: str) -> Union[str, None]:
+    """Функция преобразования даты"""
+    date_time = f"{date[8:10]}.{date[5:7]}.{date[0:4]}"
+    return date_time

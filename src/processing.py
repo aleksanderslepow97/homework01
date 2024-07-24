@@ -1,18 +1,22 @@
-from typing import Any, Dict, List
+from typing import Dict, List
 
 
-def filter_by_state(data: List[Dict[str, Any]], state: str = "EXECUTED") -> List[Dict[str, Any]]:
-    """
-    Функция фильтрует данные по указанному состоянию
+def filter_by_state(transactions: List[Dict], key_dict: str = "") -> List[Dict]:
+    """Функция фильтрации операций по ключу"""
+    filtered_list = []
+    for i in range(len(transactions)):
+        if str(transactions[i].get("state")).upper() == str(key_dict).upper():
+            filtered_list.append(transactions[i])
+    # print(f" фильтрация по статусу {filtered_list}")
+    return filtered_list
 
-    Args:
-    data (List[Dict[str, Any]]): список словарей с данными
-    state (str): состояние, по которому необходимо отфильтровать данные (по умолчанию 'EXECUTED')
-    """
-    return [d for d in data if d.get("state") == state]
 
-
-def sort_by_date(date_list: list, reverse_list: bool = True) -> list | bool:
-    """Return filtered list by date"""
-    sorted_list = sorted(date_list, key=lambda date_dict: date_dict.get("date"), reverse=reverse_list)
-    return sorted_list
+def sort_by_date(transactions: list[Dict], ascending: bool = True) -> list[Dict]:
+    """Функция сортировки операций по убыванию даты"""
+    for transaction in transactions:
+        if transaction.get("date") is None:
+            sort_dict = transactions
+            return sort_dict
+        else:
+            sort_dict = sorted(transactions, key=lambda x: x["date"], reverse=ascending)
+    return sort_dict
