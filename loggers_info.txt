@@ -264,3 +264,307 @@
 2024-07-21 21:43:12,494 masks.py INFO: mask 7000 79** **** 6361
 2024-07-21 21:43:12,496 masks.py INFO: start masked_account_num 73654108430135874305
 2024-07-21 21:43:12,496 masks.py INFO: mask **4305
+2024-07-22 19:43:02,718 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 19:43:02,718 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 19:43:02,721 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 19:43:02,721 masks.py INFO: mask **7890
+2024-07-22 19:43:02,724 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 19:43:02,724 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 19:43:02,725 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 19:43:02,726 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 19:43:02,727 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 19:43:02,727 masks.py INFO: mask **7340
+2024-07-22 19:43:02,729 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 19:43:02,729 masks.py INFO: mask **7890
+2024-07-22 19:43:02,739 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 19:43:02,739 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 19:43:02,742 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 19:43:02,742 masks.py INFO: mask **4305
+2024-07-22 19:57:22,477 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 19:57:22,478 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 19:57:22,479 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 19:57:22,479 masks.py INFO: mask **7890
+2024-07-22 19:57:22,483 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 19:57:22,483 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 19:57:22,485 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 19:57:22,485 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 19:57:22,486 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 19:57:22,486 masks.py INFO: mask **7340
+2024-07-22 19:57:22,488 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 19:57:22,488 masks.py INFO: mask **7890
+2024-07-22 19:57:22,502 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 19:57:22,502 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 19:57:22,504 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 19:57:22,504 masks.py INFO: mask **4305
+2024-07-22 20:02:09,791 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:02:09,793 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:02:09,796 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:02:09,796 masks.py INFO: mask **7890
+2024-07-22 20:02:09,803 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:02:09,803 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:02:09,806 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:02:09,806 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:02:09,809 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:02:09,809 masks.py INFO: mask **7340
+2024-07-22 20:02:09,812 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:02:09,812 masks.py INFO: mask **7890
+2024-07-22 20:02:09,829 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:02:09,830 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:02:09,832 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:02:09,832 masks.py INFO: mask **4305
+2024-07-22 20:03:31,487 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:03:31,489 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:03:31,492 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:03:31,492 masks.py INFO: mask **7890
+2024-07-22 20:03:31,498 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:03:31,498 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:03:31,501 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:03:31,501 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:03:31,505 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:03:31,505 masks.py INFO: mask **7340
+2024-07-22 20:03:31,507 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:03:31,508 masks.py INFO: mask **7890
+2024-07-22 20:03:31,525 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:03:31,526 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:03:31,529 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:03:31,529 masks.py INFO: mask **4305
+2024-07-22 20:11:31,300 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:11:31,301 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:11:31,305 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:11:31,306 masks.py INFO: mask **7890
+2024-07-22 20:11:31,311 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:11:31,312 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:11:31,315 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:11:31,316 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:11:31,319 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:11:31,319 masks.py INFO: mask **7340
+2024-07-22 20:11:31,322 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:11:31,322 masks.py INFO: mask **7890
+2024-07-22 20:11:31,338 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:11:31,338 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:11:31,341 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:11:31,341 masks.py INFO: mask **4305
+2024-07-22 20:14:36,539 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:14:36,540 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:14:36,545 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:14:36,545 masks.py INFO: mask **7890
+2024-07-22 20:14:36,551 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:14:36,551 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:14:36,553 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:14:36,554 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:14:36,557 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:14:36,557 masks.py INFO: mask **7340
+2024-07-22 20:14:36,559 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:14:36,560 masks.py INFO: mask **7890
+2024-07-22 20:14:36,576 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:14:36,576 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:14:36,578 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:14:36,579 masks.py INFO: mask **4305
+2024-07-22 20:28:28,466 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:28:28,466 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:28:28,468 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:28:28,468 masks.py INFO: mask **7890
+2024-07-22 20:28:28,471 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:28:28,471 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:28:28,474 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:28:28,474 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:28:28,475 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:28:28,475 masks.py INFO: mask **7340
+2024-07-22 20:28:28,477 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:28:28,477 masks.py INFO: mask **7890
+2024-07-22 20:28:28,486 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:28:28,487 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:28:28,488 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:28:28,489 masks.py INFO: mask **4305
+2024-07-22 20:28:41,603 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:28:41,605 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:28:41,609 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:28:41,610 masks.py INFO: mask **7890
+2024-07-22 20:28:41,618 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 20:28:41,618 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 20:28:41,624 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 20:28:41,624 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 20:28:41,628 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 20:28:41,628 masks.py INFO: mask **7340
+2024-07-22 20:28:41,631 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 20:28:41,631 masks.py INFO: mask **7890
+2024-07-22 20:28:41,651 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 20:28:41,652 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 20:28:41,656 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 20:28:41,656 masks.py INFO: mask **4305
+2024-07-22 21:03:57,865 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:03:57,866 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:03:57,868 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:03:57,868 masks.py INFO: mask **7890
+2024-07-22 21:03:57,873 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:03:57,873 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:03:57,874 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 21:03:57,875 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 21:03:57,876 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 21:03:57,876 masks.py INFO: mask **7340
+2024-07-22 21:03:57,877 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:03:57,878 masks.py INFO: mask **7890
+2024-07-22 21:03:57,886 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 21:03:57,886 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 21:03:57,890 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 21:03:57,890 masks.py INFO: mask **4305
+2024-07-22 21:05:41,187 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:05:41,188 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:05:41,190 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:05:41,190 masks.py INFO: mask **7890
+2024-07-22 21:05:41,194 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:05:41,194 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:05:41,196 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 21:05:41,196 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 21:05:41,197 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 21:05:41,197 masks.py INFO: mask **7340
+2024-07-22 21:05:41,201 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:05:41,201 masks.py INFO: mask **7890
+2024-07-22 21:05:41,212 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 21:05:41,212 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 21:05:41,215 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 21:05:41,215 masks.py INFO: mask **4305
+2024-07-22 21:05:49,392 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:05:49,394 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:05:49,395 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:05:49,396 masks.py INFO: mask **7890
+2024-07-22 21:05:49,405 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-22 21:05:49,406 masks.py INFO: mask 7158 30** **** 6758
+2024-07-22 21:05:49,410 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-22 21:05:49,410 masks.py INFO: mask 7158 30** **** 6759
+2024-07-22 21:05:49,413 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-22 21:05:49,413 masks.py INFO: mask **7340
+2024-07-22 21:05:49,417 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-22 21:05:49,418 masks.py INFO: mask **7890
+2024-07-22 21:05:49,439 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-22 21:05:49,440 masks.py INFO: mask 7000 79** **** 6361
+2024-07-22 21:05:49,443 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-22 21:05:49,443 masks.py INFO: mask **4305
+2024-07-23 19:27:18,339 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:27:18,340 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:27:18,342 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:27:18,342 masks.py INFO: mask **7890
+2024-07-23 19:27:18,348 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:27:18,348 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:27:18,351 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-23 19:27:18,351 masks.py INFO: mask 7158 30** **** 6759
+2024-07-23 19:27:18,353 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-23 19:27:18,353 masks.py INFO: mask **7340
+2024-07-23 19:27:18,356 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:27:18,356 masks.py INFO: mask **7890
+2024-07-23 19:27:18,369 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-23 19:27:18,369 masks.py INFO: mask 7000 79** **** 6361
+2024-07-23 19:27:18,371 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-23 19:27:18,371 masks.py INFO: mask **4305
+2024-07-23 19:35:13,243 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:35:13,245 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:35:13,248 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:35:13,248 masks.py INFO: mask **7890
+2024-07-23 19:35:13,251 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:35:13,251 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:35:13,253 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-23 19:35:13,253 masks.py INFO: mask 7158 30** **** 6759
+2024-07-23 19:35:13,255 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-23 19:35:13,255 masks.py INFO: mask **7340
+2024-07-23 19:35:13,257 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:35:13,258 masks.py INFO: mask **7890
+2024-07-23 19:35:13,270 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-23 19:35:13,270 masks.py INFO: mask 7000 79** **** 6361
+2024-07-23 19:35:13,272 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-23 19:35:13,272 masks.py INFO: mask **4305
+2024-07-23 19:42:47,722 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:42:47,722 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:42:47,726 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:42:47,726 masks.py INFO: mask **7890
+2024-07-23 19:42:47,730 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 19:42:47,730 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 19:42:47,733 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-23 19:42:47,733 masks.py INFO: mask 7158 30** **** 6759
+2024-07-23 19:42:47,734 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-23 19:42:47,734 masks.py INFO: mask **7340
+2024-07-23 19:42:47,738 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 19:42:47,738 masks.py INFO: mask **7890
+2024-07-23 19:42:47,749 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-23 19:42:47,750 masks.py INFO: mask 7000 79** **** 6361
+2024-07-23 19:42:47,752 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-23 19:42:47,752 masks.py INFO: mask **4305
+2024-07-23 20:25:25,625 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 20:25:25,647 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 20:25:25,648 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 20:25:25,649 masks.py INFO: mask **7890
+2024-07-23 20:25:25,651 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 20:25:25,651 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 20:25:25,653 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-23 20:25:25,653 masks.py INFO: mask 7158 30** **** 6759
+2024-07-23 20:25:25,655 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-23 20:25:25,655 masks.py INFO: mask **7340
+2024-07-23 20:25:25,657 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 20:25:25,657 masks.py INFO: mask **7890
+2024-07-23 20:25:25,667 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-23 20:25:25,667 masks.py INFO: mask 7000 79** **** 6361
+2024-07-23 20:25:25,669 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-23 20:25:25,669 masks.py INFO: mask **4305
+2024-07-23 20:28:09,668 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 20:28:09,668 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 20:28:09,670 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 20:28:09,670 masks.py INFO: mask **7890
+2024-07-23 20:28:09,676 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-23 20:28:09,676 masks.py INFO: mask 7158 30** **** 6758
+2024-07-23 20:28:09,678 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-23 20:28:09,678 masks.py INFO: mask 7158 30** **** 6759
+2024-07-23 20:28:09,680 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-23 20:28:09,680 masks.py INFO: mask **7340
+2024-07-23 20:28:09,682 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-23 20:28:09,682 masks.py INFO: mask **7890
+2024-07-23 20:28:09,690 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-23 20:28:09,690 masks.py INFO: mask 7000 79** **** 6361
+2024-07-23 20:28:09,692 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-23 20:28:09,692 masks.py INFO: mask **4305
+2024-07-24 10:10:19,499 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:10:19,500 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:10:19,502 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:10:19,503 masks.py INFO: mask **7890
+2024-07-24 10:10:19,505 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:10:19,506 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:10:19,507 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-24 10:10:19,507 masks.py INFO: mask 7158 30** **** 6759
+2024-07-24 10:10:19,511 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-24 10:10:19,511 masks.py INFO: mask **7340
+2024-07-24 10:10:19,513 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:10:19,513 masks.py INFO: mask **7890
+2024-07-24 10:10:19,528 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-24 10:10:19,528 masks.py INFO: mask 7000 79** **** 6361
+2024-07-24 10:10:19,532 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-24 10:10:19,533 masks.py INFO: mask **4305
+2024-07-24 10:12:00,598 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:12:00,599 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:12:00,600 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:12:00,600 masks.py INFO: mask **7890
+2024-07-24 10:12:00,603 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:12:00,603 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:12:00,605 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-24 10:12:00,605 masks.py INFO: mask 7158 30** **** 6759
+2024-07-24 10:12:00,606 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-24 10:12:00,606 masks.py INFO: mask **7340
+2024-07-24 10:12:00,608 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:12:00,608 masks.py INFO: mask **7890
+2024-07-24 10:12:00,618 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-24 10:12:00,618 masks.py INFO: mask 7000 79** **** 6361
+2024-07-24 10:12:00,620 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-24 10:12:00,621 masks.py INFO: mask **4305
+2024-07-24 10:38:45,549 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:38:45,549 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:38:45,551 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:38:45,551 masks.py INFO: mask **7890
+2024-07-24 10:38:45,554 masks.py INFO: start masked_card_num 7158300734726758
+2024-07-24 10:38:45,555 masks.py INFO: mask 7158 30** **** 6758
+2024-07-24 10:38:45,556 masks.py INFO: start masked_card_num 7158300734726759
+2024-07-24 10:38:45,556 masks.py INFO: mask 7158 30** **** 6759
+2024-07-24 10:38:45,558 masks.py INFO: start masked_account_num 12345678901234567340
+2024-07-24 10:38:45,558 masks.py INFO: mask **7340
+2024-07-24 10:38:45,559 masks.py INFO: start masked_account_num 12345678901234567890
+2024-07-24 10:38:45,559 masks.py INFO: mask **7890
+2024-07-24 10:38:45,570 masks.py INFO: start masked_card_num 7000792289606361
+2024-07-24 10:38:45,570 masks.py INFO: mask 7000 79** **** 6361
+2024-07-24 10:38:45,572 masks.py INFO: start masked_account_num 73654108430135874305
+2024-07-24 10:38:45,572 masks.py INFO: mask **4305

@@ -1,27 +1,32 @@
-import logging
-
-logger = logging.getLogger("masks")
-file_handler = logging.FileHandler("loggers_info.txt")
-file_formatter = logging.Formatter("%(asctime)s %(filename)s %(levelname)s: %(message)s")
-file_handler.setFormatter(file_formatter)
-logger.addHandler(file_handler)
-logger.setLevel(logging.DEBUG)
+from typing import Union
 
 
-def masked_card_num(num: str) -> str:
-    """функция принимает номер карты и возвращает замаскированный номер
-    @rtype: object
-    """
-    logger.info(f"start masked_card_num {num}")
-    number = 4
-    result = num[:number] + " " + num[number : number + 2] + "** ****" + " " + num[number + 8 :]
-    logger.info(f"mask {result}")
-    return result
+def get_mask_card_number(card_number: str) -> Union[str, None]:
+    """Функция маскировки номера карты"""
+    if card_number.isdigit() and len(card_number) == 16:
+        # logger.info(f"Производим маскировку номера карты {card_number}")
+        masks_card = f"{card_number[:4]} {card_number[4:6]}** **** {card_number[12:]}"
+        return masks_card
+    else:
+        return None
 
 
-def masked_account_num(num: str) -> str:
-    """функция принимает номер счёта и возвращает замаскированный номер"""
-    logger.info(f"start masked_account_num {num}")
-    result = "**" + num[-4:]
-    logger.info(f"mask {result}")
-    return result
+def get_mask_account(account: str) -> Union[str, None]:
+    """Функция маскировки номера счета"""
+    if account.isdigit() and len(account) == 20:
+        # logger.info(f"Производим маскировку номера счета {account}")
+        masks_account = f"**{account[-4::]}"
+        return masks_account
+    else:
+        return None
+
+
+def mask_account_card(account_card: str) -> Union[str, None]:
+    """Функция маскировки номера карты или номера счета"""
+    numeral = account_card[-20:]
+    if numeral.isdigit():  # account_card[:3] == "Счет" and
+        account = str(numeral)
+        return f"{account_card[0:-20]} {get_mask_account(account)}"
+    else:
+        card_number = str(account_card[-16:])
+        return f"{account_card[0:-16]} {get_mask_card_number(card_number)}"
