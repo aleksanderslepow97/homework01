@@ -1,25 +1,37 @@
 import os
-from pathlib import Path
-from typing import Any, Dict
 
 import requests
 from dotenv import load_dotenv
 
-import src.utils
-from src.utils import get_transactions
-from src.сonfig import ROOT_PATH
-
-# Загрузка переменных из .env-файла
 load_dotenv()
-api_key = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY")
+url = "https://api.apilayer.com/exchangerates_data/convert?to={}&from={}&amount={}"
+headers = {"apikey": API_KEY}
 
 
-def transaction_amount(transaction: Dict) -> float | Any:
-    """функция, которая принимает транзакцию и возвращает сумму транзакции"""
-    currency = transaction["operationAmount"]["currency"]["code"]
-    amount = transaction["operationAmount"]["amount"]
-    url = f"https://api.apilayer.com/exchangerates_data/convert?to={"RUB"}&from={currency}&amount={amount}"
-    headers = {"apikey": api_key}
-    response = requests.request("GET", url, headers=headers)
-    result: Any = response.json()
-    return result["result"]
+def get_amount_rub(transactions: dict) -> float:
+    """Функция переводит транзакции в рубли"""
+
+    amount = transactions.get("operationAmount", {}).get("amount")
+    currency = transactions.get("operationAmount", {}).get("currency", {}).get("code")
+
+    if currency == "RUB":
+        return float(amount)
+    elif currency in ["USD", "EUR"]:
+        response = requests.get(url.format("RUB", currency, amount), headers=headers)
+        if response.status_code == 200:
+            data = response.json()
+            return float(data["result"])
+        else:
+            return 0.0
+    else:
+        return 0.0
+
+
+def get_transactions(transactions: list[dict]) -> list[float]:
+    """Функция принимает на вход транзакцию и возвращает сумму транзакции в рублях"""
+    list_transactions = []
+    for transaction in transactions:
+        amount_rub = get_amount_rub(transaction)
+        list_transactions.append(amount_rub)
+    return list_transactions
