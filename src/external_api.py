@@ -1,37 +1,32 @@
-import os
-
-import requests
+import src.utils
+from src.сonfig import ROOT_PATH
 from dotenv import load_dotenv
-
+import requests
+from src.utils import get_transactions
+from typing import Dict, Any
+# Загрузка переменных из .env-файла
 load_dotenv()
-API_KEY = os.getenv("API_KEY")
-url = "https://api.apilayer.com/exchangerates_data/convert?to={}&from={}&amount={}"
-headers = {"apikey": API_KEY}
+api_key = os.getenv("API_KEY")
+def transaction_amount(transaction: Dict) -> float | Any:
+    """функция, которая принимает транзакцию и возвращает сумму транзакции"""
+    currency = transaction["operationAmount"]["currency"]["code"]
+    amount = transaction["operationAmount"]["amount"]
+    url = f"https://api.apilayer.com/exchangerates_data/convert?to={"RUB"}&from={currency}&amount={amount}"
+    headers = {"apikey": api_key}
+    response = requests.request("GET", url, headers=headers)
+    result: Any = response.json()
+    return result["result"]
 
 
-def get_amount_rub(transactions: dict) -> float:
-    """Функция переводит транзакции в рубли"""
+# transactions = src.utils.get_transactions(Path(ROOT_PATH, "../data/operations.json"))
 
-    amount = transactions.get("operationAmount", {}).get("amount")
-    currency = transactions.get("operationAmount", {}).get("currency", {}).get("code")
-
-    if currency == "RUB":
-        return float(amount)
-    elif currency in ["USD", "EUR"]:
-        response = requests.get(url.format("RUB", currency, amount), headers=headers)
-        if response.status_code == 200:
-            data = response.json()
-            return float(data["result"])
-        else:
-            return 0.0
-    else:
-        return 0.0
-
-
-def get_transactions(transactions: list[dict]) -> list[float]:
-    """Функция принимает на вход транзакцию и возвращает сумму транзакции в рублях"""
-    list_transactions = []
-    for transaction in transactions:
-        amount_rub = get_amount_rub(transaction)
-        list_transactions.append(amount_rub)
-    return list_transactions
+# transaction = {
+# "id": 441945886,
+# "state": "EXECUTED",
+# "date": "2019-08-26T10:50:58.294041",
+# "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": "RUB"}},
+# "description": "Перевод организации",
+# "from": "Maestro 1596837868705199",
+# "to": "Счет 64686473678894779589",
+#             }
+# print(transaction_amount(transaction))
