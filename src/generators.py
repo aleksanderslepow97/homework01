@@ -1,3 +1,6 @@
+import re
+from typing import Any, List
+
 transactions = [
     {
         "id": 939719570,
