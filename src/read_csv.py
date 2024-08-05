@@ -41,3 +41,8 @@ def read_csv(path_to_file: Path) -> List:
     except Exception:
         print("Файл не найден")
         return []
+
+
+# Проверка кода
+# path_to_file = Path(ROOT_PATH, "../data/transactions.csv")
+# print(read_csv(Path(ROOT_PATH, "../data/transactions.csv")))

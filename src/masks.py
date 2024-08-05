@@ -45,3 +45,18 @@ def mask_account_card(account_card: str) -> Union[str, None]:
         card_number = str(account_card[-16:])
         return f"{account_card[0:-16]} {get_mask_card_number(card_number)}"
 
+
+# Проверка выполнения кода
+
+
+# American Express 2932525563014117
+# Счет 96692813169753520384
+# Mastercard 5612504218607911
+# account_card_1 = "Maestro1234567812345678"
+# account_card_2 = "Счет12345678901234567890"
+# account_card_3 = "American Express 2932525563014117"
+# #
+# #
+# result_3 = print(mask_account_card(account_card_1))
+# result_4 = print(mask_account_card(account_card_2))
+# result_5 = print(mask_account_card(account_card_3))

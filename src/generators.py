@@ -96,3 +96,21 @@ def card_number_generator(start, end):
         str_sum = empty_str + str(i)
         card_number = f"{str_sum[-16:-12]} {str_sum[-12:-8]} {str_sum[-8:-4]} {str_sum[-4:-1]}{str_sum[-1]}"
         yield card_number
+
+
+# проверка работы кода:
+#
+# usd_transactions = filter_currency(transactions, "RUB")
+# print(filter_currency(transactions, "RUB"))
+#
+# for _ in range(3):
+#     print(next(usd_transactions)["id"])
+#
+# descriptions = transaction_descriptions(transactions)
+#
+# for _ in range(5):
+#     print(next(descriptions))
+#
+#
+# for card_number in card_number_generator(1, 1):
+#         print(card_number)
