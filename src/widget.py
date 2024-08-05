@@ -18,3 +18,14 @@ def get_date(date: str) -> Union[str, None]:
     """Функция преобразования даты"""
     date_time = f"{date[8:10]}.{date[5:7]}.{date[0:4]}"
     return date_time
+
+
+# account_card_1 = "Maestro1234567812345678"
+# account_card_2 = "Счет12345678901234567890"
+#
+#
+# result_3 = print(mask_account_card(account_card_1))
+# result_4 = print(mask_account_card(account_card_2))
+#
+# date = "2018-07-11T02:26:18.671407"
+# result_5 = print(get_date(date))

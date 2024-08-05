@@ -31,3 +31,12 @@ def get_transactions(path_to_file: Path) -> List:
         # logger.error("Файл не найден")
         print("Файл не найден")
         return []
+
+
+# Проверка кода
+# path_to_file = Path(ROOT_PATH, "../data/operations.json")
+# transactions = get_transactions(path_to_file)
+# print(get_transactions(Path(ROOT_PATH, "../data/operations.json")))
+#
+#
+# print(type(get_transactions(Path(ROOT_PATH, "../data/operations.json"))))
