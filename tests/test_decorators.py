@@ -1,68 +1,58 @@
+import os
 import pytest
-
 from src.decorators import log
 
 
-def test_log_correct(capsys):
-    # Проверка корректного выполнения функции
-    @log(filename="test_log.txt")
-    def my_function(x, y):
-        return x + y
+def test_log_file():
+    @log(filename="mylog.txt")
+    def example_function(x, y):
+        return x * y
 
-    my_function(1, 2)
+    result = example_function(5, 100)
+
+    with open(os.path.join(r"logs", "mylog.txt"), "rt") as file:
+        for line in file:
+            log_string = line
+
+    assert log_string == "example_function ok. Result: 500\n"
+    assert result == 500
+
+
+def test_log_console(capsys):
+    @log()
+    def example_function(x, y):
+        return x * y
+
+    result = example_function(5, 100)
     captured = capsys.readouterr()
-    assert "my_function called with args: (1, 2), kwargs:{}. Result: 3\n" in captured.out
+
+    assert captured.out == "example_function ok. Result: 500\n"
+    assert result == 500
 
 
-def test_log_different_types_str(capsys):
-    # Проверка ошибки: missing 2 required positional arguments: 'x' and 'y'.
-    @log(filename="test_log.txt")
-    def my_function(x, y):
-        return x + y
+def test_log_file_raise():
+    @log(filename="mylog.txt")
+    def example_function(x, y):
+        raise TypeError("Что-то пошло не так")
 
-    try:
-        my_function("a", "b")
-    except TypeError as e:
-        captured = capsys.readouterr()
-        assert "my function error: " in captured.out
+    with pytest.raises(TypeError, match="Что-то пошло не так"):
+        example_function(5, 100)
 
+    with open(os.path.join(r"logs", "mylog.txt"), "rt") as file:
+        for line in file:
+            log_string = line
 
-def test_log_lack_argument(capsys):
-    # Проверка ошибки: missing 1 required positional argument: 'y'.
-    @log(filename="test_log.txt")
-    def my_function(x, y):
-        return x + y
-
-    try:
-        my_function(
-            1,
-        )
-    except TypeError as e:
-        captured = capsys.readouterr()
-        assert "my function error: " in captured.out
+    assert log_string == "example_function TypeError: Что-то пошло не так. Inputs: (5, 100), {}\n"
 
 
-def test_log_different_types_argument(capsys):
-    # Проверка ошибки: unsupported operand type(s) for +: 'int' and 'str'.
-    @log(filename="test_log.txt")
-    def my_function(x, y):
-        return x + y
+def test_log_console_raise(capsys):
+    @log()
+    def example_function(x, y):
+        raise ValueError("Что-то пошло не так")
 
-    try:
-        my_function(1, "")
-    except TypeError as e:
-        captured = capsys.readouterr()
-        assert "my function error: " in captured.out
+    with pytest.raises(ValueError, match="Что-то пошло не так"):
+        example_function(5, 100)
 
+    captured = capsys.readouterr()
 
-def test_log_different_types_no_argument(capsys):
-    # Проверка ошибки: missing 2 required positional arguments: 'x' and 'y'.
-    @log(filename="test_log.txt")
-    def my_function(x, y):
-        return x + y
-
-    try:
-        my_function()
-    except TypeError as e:
-        captured = capsys.readouterr()
-        assert "my function error: " in captured.out
+    assert captured.out == "example_function ValueError: Что-то пошло не так. Inputs: (5, 100), {}\n"
