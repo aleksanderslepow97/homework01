@@ -1,36 +1,34 @@
+import os
 from functools import wraps
+from typing import Any, Callable, Optional
 
 
-def logging(filename=None):
-    """Декоратор, который логирует вызов функции и ее результат
-    в файл mylog.txt или в консоль"""
+def log(filename: Optional[str] = None) -> Callable:
+    """Декоратор который логгирует вызов функции и записывает её в файл или консоль"""
 
-    def decorator(func):
+    def wrapper(func: Callable) -> Callable:
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def inner(*args: tuple, **kwargs: dict) -> Any:
+            log_str = ""
             try:
                 result = func(*args, **kwargs)
-                if filename != None:
-                    with open(filename, "a") as mylog:
-                        mylog.write(f"{func. __name__} ok\n")
-                elif filename == None:
-                    print(f"{func, __name__} ok")
+                log_str = f"{func.__name__} ok. Result: {result}"
                 return result
+
             except Exception as e:
-                with open(filename, "a") as mylog:
-                    (mylog.write(f"{func.__name__} error:{e}. Inputs: {args}, {kwargs}\n"))
+                log_str = f"{func.__name__} {type(e).__name__}: {e}. Inputs: {args}, {kwargs}"
                 raise e
 
-        return wrapper
+            finally:
+                if filename:  # Записать лог в файл
+                    if not os.path.exists(r"logs"):
+                        os.mkdir(r"logs")  # Создать папку «logs», если ее нет
+                    with open(os.path.join(r"logs", filename), "at") as file:
+                        file.write(log_str + "\n")
 
-    return decorator
+                else:  # Вывести лог в консоль
+                    print(log_str)
 
+        return inner
 
-# @logging(filename="mylog.txt")
-# def my_function(x, y):
-#     """Функция сложения двух чисел"""
-#     return x + y
-#
-#
-# # проверка работы функции
-# print(my_function(2, 3))
+    return wrapper

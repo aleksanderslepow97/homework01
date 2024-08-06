@@ -1,6 +1,3 @@
-from src.read_csv import read_csv
-import sys
-from pathlib import Path
 from unittest.mock import patch
 
 
