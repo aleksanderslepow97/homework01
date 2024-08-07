@@ -1,11 +1,11 @@
 import json
-import logging
+# import logging
 import sys
 from pathlib import Path
 from typing import List
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
-from src.сonfig import ROOT_PATH
+# from src.сonfig import ROOT_PATH
 
 # logger = logging.getLogger("utils")
 # logger.setLevel(logging.INFO)

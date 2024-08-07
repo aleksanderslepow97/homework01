@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
-from src.сonfig import ROOT_PATH
+# from src.сonfig import ROOT_PATH
 
 
 def read_excel(path_to_file: Path) -> list:
