@@ -1,13 +1,11 @@
 # import re
 import sys
-
 # from typing import Dict, List
 from pathlib import Path
 
 # from numpy.core.multiarray import item
-sys.path.append(str(Path(__file__).resolve().parent.parent))
 from src.generators import filter_currency
-from src.masks import get_mask_account
+# from src.masks import get_mask_account
 from src.processing import filter_by_state, sort_by_date
 from src.read_csv import read_csv
 from src.read_excel import read_excel
@@ -19,8 +17,9 @@ from src.сonfig import ROOT_PATH
 # from collections import defaultdict
 # from collections import Counter
 
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 
-greetings = """Привет!\nДобро пожаловать в программу работы с банковскими транзакциями. 
+greetings = """Привет!\nДобро пожаловать в программу работы с банковскими транзакциями.
 
 Выберите необходимый пункт меню:
 1. Получить информацию о транзакциях из JSON-файла

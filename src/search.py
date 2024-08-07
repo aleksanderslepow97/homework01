@@ -6,8 +6,8 @@ from typing import Dict, List
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from collections import Counter, defaultdict
 
-from src.utils import get_transactions
-from src.сonfig import ROOT_PATH
+# from src.utils import get_transactions
+# from src.сonfig import ROOT_PATH
 
 
 def search(transactions: list[Dict], search_data) -> list[Dict]:

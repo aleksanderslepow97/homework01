@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import List
 
 sys.path.append(str(Path(__file__).resolve().parent.parent))
-from src.сonfig import ROOT_PATH
+# from src.сonfig import ROOT_PATH
 
 
 def read_csv(path_to_file: Path) -> List:
